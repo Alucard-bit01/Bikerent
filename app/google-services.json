@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "943850958014",
+    "project_id": "rentbike-80cc9",
+    "storage_bucket": "rentbike-80cc9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943850958014:android:d7ee2a97cf5982a26f82ef",
+        "android_client_info": {
+          "package_name": "mx.edu.utng.eapd.bikerent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943850958014-mr4b5vtn4bi4baituii1shlou81vhot1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mx.edu.utng.eapd.bikerent",
+            "certificate_hash": "f9691a9b72d16ec8cd4329c73ca5204d86977d1c"
+          }
+        },
+        {
+          "client_id": "943850958014-jadh7th5b2nratkf3f3jl8g5b9qu3dfc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYoDvimPCslp5gg9Bg_MRw6qzzDvbED-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943850958014-jadh7th5b2nratkf3f3jl8g5b9qu3dfc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
