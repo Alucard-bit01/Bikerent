@@ -20,7 +20,6 @@ BikeRent es una aplicación de Android de ejemplo que demuestra un sistema de al
 *   **Arquitectura:** MVVM (Model-View-ViewModel).
 *   **Navegación:** [Jetpack Navigation Compose](https://developer.android.com/jetpack/compose/navigation).
 *   **Backend y Autenticación:** [Firebase](https://firebase.google.com/) (Authentication, Firestore).
-*   **Carga de Imágenes:** [Coil](https://coil-kt.github.io/coil/) para la carga eficiente de imágenes.
 *   **Asincronía:** Coroutines y Flow de Kotlin.
 
 ## Configuración del Proyecto
