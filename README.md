@@ -1,6 +1,8 @@
 # BikeRent App
 
 BikeRent es una aplicación de Android de ejemplo que demuestra un sistema de alquiler de bicicletas. Los usuarios pueden registrarse, iniciar sesión, explorar bicicletas disponibles y ver sus perfiles. La aplicación está construida con tecnologías modernas de Android.
+Permite administrar un catálogo de bicicletas, registrar rentas y mantener un historial completo almacenado localmente en el dispositivo.
+El proyecto fue desarrollado con fines educativos, enfocándose en implementar una arquitectura limpia, separación de responsabilidades, navegación estructurada y persistencia de datos con Room. Además, aprovecha Material Design 3 para una interfaz moderna y responsiva.
 
 ## Características Principales
 
