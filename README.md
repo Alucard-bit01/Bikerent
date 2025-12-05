@@ -32,7 +32,7 @@ El proyecto fue desarrollado con fines educativos, enfocándose en implementar u
 * │   ├── build/
 * │   ├── libs/
 * │   ├── src/
-* │   │   ├── androidTest/
+*  │   │   ├── androidTest/
 * │   │   │   └── java/
 * │   │   │       └── mx/
 * │   │   │           └── edu/
