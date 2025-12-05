@@ -24,6 +24,93 @@ El proyecto fue desarrollado con fines educativos, enfocándose en implementar u
 *   **Backend y Autenticación:** [Firebase](https://firebase.google.com/) (Authentication, Firestore).
 *   **Asincronía:** Coroutines y Flow de Kotlin.
 
+## Estructura del proyecto
+bikerent/
+├── app/
+│   ├── build.gradle.kts
+│   ├── google-services.json
+│   └── src/
+│       ├── main/
+│       │   ├── java/
+│       │   │   └── mx/
+│       │   │       └── edu/
+│       │   │           └── utng/
+│       │   │               └── eapd/
+│       │   │                   └── bikerent/
+│       │   │                       ├── MainActivity.kt
+│       │   │                       ├── navigation/
+│       │   │                       │   └── BikeRentNavHost.kt
+│       │   │                       ├── ui/
+│       │   │                       │   ├── screens/
+│       │   │                       │   │   ├── auth/
+│       │   │                       │   │   │   ├── LoginScreen.kt
+│       │   │                       │   │   │   └── SignUpScreen.kt
+│       │   │                       │   │   ├── BikeDetailScreen.kt
+│       │   │                       │   │   ├── BikesScreen.kt
+│       │   │                       │   │   ├── EditProfileScreen.kt
+│       │   │                       │   │   └── ProfileScreen.kt
+│       │   │                       │   └── theme/
+│       │   │                       │       ├── Color.kt
+│       │   │                       │       ├── Theme.kt
+│       │   │                       │       └── Type.kt
+│       │   │                       └── viewmodel/
+│       │   │                           └── AuthViewModel.kt
+│       │   └── res/
+│       │       ├── drawable/
+│       │       ├── layout/
+│       │       ├── mipmap-xxxhdpi/
+│       │       └── values/
+│       │           ├── colors.xml
+│       │           ├── strings.xml
+│       │           └── themes.xml
+│       └── test/
+│           └── java/
+└── build.gradle.kts
+
+## Ejemplo de codigo documentado
+
+   /**
+     * Se crea un lanzador para el resultado de una actividad, en este caso, el flujo de inicio de sesión de Google.
+     * Utiliza el contrato [ActivityResultContracts.StartActivityForResult], que inicia una actividad y espera un resultado.
+     *
+     * El callback `onResult` se ejecuta cuando el usuario regresa a la aplicación después del intento de inicio de sesión.
+     */
+    val googleSignInLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.StartActivityForResult(),
+        onResult = { result ->
+            // Se obtiene la tarea para extraer el resultado del intent de inicio de sesión.
+            val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
+            try {
+                // Si la tarea es exitosa, se obtiene la cuenta del usuario.
+                val account = task.getResult(ApiException::class.java)!!
+                // Se llama al ViewModel para realizar la autenticación en Firebase con el idToken de la cuenta de Google.
+                authViewModel.signInWithGoogle(account.idToken!!)
+            } catch (e: ApiException) {
+                // Si ocurre un error (por ejemplo, el usuario cancela el flujo), se muestra un mensaje.
+                Toast.makeText(context, "Google Sign-in failed: ${e.statusCode}", Toast.LENGTH_SHORT).show()
+            }
+        }
+    )
+ 
+    
+    /**
+     * Efecto secundario que se ejecuta cada vez que el estado de `firebaseUser` cambia.* `LaunchedEffect` es ideal para llamar funciones de suspensión (como navegar) en respuesta a un cambio de estado.
+     *
+     * @param firebaseUser El estado del usuario de Firebase. Cuando este valor cambia de `null` a un objeto `FirebaseUser`,
+     *                     indica que el inicio de sesión fue exitoso.
+     */
+    LaunchedEffect(firebaseUser) {
+        // Si el usuario no es nulo, significa que el registro o inicio de sesión fue exitoso.
+        if (firebaseUser != null) {
+            // Se navega a la ruta "home" (o la pantalla principal de la aplicación).
+            navController.navigate("home") {
+                // Se elimina la pila de navegación hasta la ruta "login" (inclusive).
+                // Esto previene que el usuario pueda volver a las pantallas de login/signup presionando el botón de retroceso.
+                popUpTo("login") { inclusive = true }
+            }
+        }
+    }
+
 ## Configuración del Proyecto
 
 Sigue estos pasos para poner en marcha el proyecto:
