@@ -97,7 +97,7 @@ El proyecto fue desarrollado con fines educativos, enfocándose en implementar u
 
 ## Ejemplo de codigo documentado
 
-   /**
+    /**
      * Se crea un lanzador para el resultado de una actividad, en este caso, el flujo de inicio de sesión de Google.
      * Utiliza el contrato [ActivityResultContracts.StartActivityForResult], que inicia una actividad y espera un resultado.
      *
