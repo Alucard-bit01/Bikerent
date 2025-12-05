@@ -91,7 +91,7 @@ bikerent/
             }
         }
     )
- 
+
     
     /**
      * Efecto secundario que se ejecuta cada vez que el estado de `firebaseUser` cambia.* `LaunchedEffect` es ideal para llamar funciones de suspensión (como navegar) en respuesta a un cambio de estado.
