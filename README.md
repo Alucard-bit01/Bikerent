@@ -25,7 +25,74 @@ El proyecto fue desarrollado con fines educativos, enfocándose en implementar u
 *   **Asincronía:** Coroutines y Flow de Kotlin.
 
 ## Estructura del proyecto
-<img width="360" height="661" alt="image" src="https://github.com/user-attachments/assets/e1d762ae-c1b2-487c-9297-e3d6f7ea5b15" />
+**bikerent/
+├── .gradle/
+├── .idea/
+├── app/
+│   ├── build/
+│   ├── libs/
+│   ├── src/
+│   │   ├── androidTest/
+│   │   │   └── java/
+│   │   │       └── mx/
+│   │   │           └── edu/
+│   │   │               └── utng/
+│   │   │                   └── eapd/
+│   │   │                       └── bikerent/
+│   │   │                           └── ExampleInstrumentedTest.kt
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── mx/
+│   │   │   │       └── edu/
+│   │   │   │           └── utng/
+│   │   │   │               └── eapd/
+│   │   │   │                   └── bikerent/
+│   │   │   │                       ├── data/
+│   │   │   │                       │   ├── BikeDao.kt
+│   │   │   │                       │   └── BikeRepository.kt
+│   │   │   │                       ├── model/
+│   │   │   │                       │   ├── Bike.kt
+│   │   │   │                       │   ├── Rent.kt
+│   │   │   │                       │   ├── RentDao.kt
+│   │   │   │                       │   ├── RentDatabase.kt
+│   │   │   │                       │   ├── RentRepository.kt
+│   │   │   │                       │   └── User.kt
+│   │   │   │                       ├── navigation/
+│   │   │   │                       │   ├── BikeRentNavHost.kt
+│   │   │   │                       │   └── Screen.kt
+│   │   │   │                       ├── ui/
+│   │   │   │                       │   ├── screens/
+│   │   │   │                       │   │   ├── auth/
+│   │   │   │                       │   │   │   ├── LoginScreen.kt
+│   │   │   │                       │   │   │   └── SignUpScreen.kt
+│   │   │   │                       │   │   ├── BikeAddScreen.kt
+│   │   │   │                       │   │   ├── BikeDetailScreen.kt
+│   │   │   │                       │   │   ├── BikeEditScreen.kt
+│   │   │   │                       │   │   ├── BikeListScreen.kt
+│   │   │   │                       │   │   ├── BikesScreen.kt
+│   │   │   │                       │   │   ├── EditProfileScreen.kt
+│   │   │   │                       │   │   ├── HomeScreen.kt
+│   │   │   │                       │   │   ├── ProfileScreen.kt
+│   │   │   │                       │   │   └── RentScreen.kt
+│   │   │   │                       │   └── theme/
+│   │   │   │                       │       ├── Color.kt
+│   │   │   │                       │       ├── Theme.kt
+│   │   │   │                       │       └── Type.kt
+│   │   │   │                       ├── viewmodel/
+│   │   │   │                       │   ├── AuthViewModel.kt
+│   │   │   │                       │   ├── BikeViewModel.kt
+│   │   │   │                       │   └── RentViewModel.kt
+│   │   │   │                       └── MainActivity.kt
+│   │   │   ├── res/
+│   │   │   │   ├── values/
+│   │   │   │   │   ├── colors.xml
+│   │   │   │   │   ├── strings.xml
+│   │   │   │   │   └── themes.xml
+│   │   │   │   └── xml/
+│   │   │   └── AndroidManifest.xml
+│   │   └── test
+│   ├── build.gradle.kts
+│   ├── google-services.json**
 
 
 ## Ejemplo de codigo documentado
