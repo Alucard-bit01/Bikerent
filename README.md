@@ -25,47 +25,8 @@ El proyecto fue desarrollado con fines educativos, enfocándose en implementar u
 *   **Asincronía:** Coroutines y Flow de Kotlin.
 
 ## Estructura del proyecto
-bikerent/
-├── app/
-│   ├── build.gradle.kts
-│   ├── google-services.json
-│   └── src/
-│       ├── main/
-│       │   ├── java/
-│       │   │   └── mx/
-│       │   │       └── edu/
-│       │   │           └── utng/
-│       │   │               └── eapd/
-│       │   │                   └── bikerent/
-│       │   │                       ├── MainActivity.kt
-│       │   │                       ├── navigation/
-│       │   │                       │   └── BikeRentNavHost.kt
-│       │   │                       ├── ui/
-│       │   │                       │   ├── screens/
-│       │   │                       │   │   ├── auth/
-│       │   │                       │   │   │   ├── LoginScreen.kt
-│       │   │                       │   │   │   └── SignUpScreen.kt
-│       │   │                       │   │   ├── BikeDetailScreen.kt
-│       │   │                       │   │   ├── BikesScreen.kt
-│       │   │                       │   │   ├── EditProfileScreen.kt
-│       │   │                       │   │   └── ProfileScreen.kt
-│       │   │                       │   └── theme/
-│       │   │                       │       ├── Color.kt
-│       │   │                       │       ├── Theme.kt
-│       │   │                       │       └── Type.kt
-│       │   │                       └── viewmodel/
-│       │   │                           └── AuthViewModel.kt
-│       │   └── res/
-│       │       ├── drawable/
-│       │       ├── layout/
-│       │       ├── mipmap-xxxhdpi/
-│       │       └── values/
-│       │           ├── colors.xml
-│       │           ├── strings.xml
-│       │           └── themes.xml
-│       └── test/
-│           └── java/
-└── build.gradle.kts
+<img width="360" height="661" alt="image" src="https://github.com/user-attachments/assets/e1d762ae-c1b2-487c-9297-e3d6f7ea5b15" />
+
 
 ## Ejemplo de codigo documentado
 
