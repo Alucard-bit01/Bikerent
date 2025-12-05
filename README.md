@@ -24,6 +24,16 @@ El proyecto fue desarrollado con fines educativos, enfocándose en implementar u
 *   **Backend y Autenticación:** [Firebase](https://firebase.google.com/) (Authentication, Firestore).
 *   **Asincronía:** Coroutines y Flow de Kotlin.
 
+*   ## Capturas de evidencia
+*   ![WhatsApp Image 2025-12-04 at 5 55 18 PM](https://github.com/user-attachments/assets/2e1b1f7b-2ab1-47d7-bfbd-dd1ce4167f31)
+*   ![WhatsApp Image 2025-12-04 at 5 55 17 PM (3)](https://github.com/user-attachments/assets/456ac590-dd29-49ec-91af-a9afb4302a46)
+*   ![WhatsApp Image 2025-12-04 at 5 55 17 PM (2)](https://github.com/user-attachments/assets/9a5a478b-2bc3-4d65-83a2-a8891db31e18)
+*   ![WhatsApp Image 2025-12-04 at 5 55 17 PM (1)](https://github.com/user-attachments/assets/cabb6d46-dc93-4af9-9b8e-35edc56d8c76)
+*   ![WhatsApp Image 2025-12-04 at 5 55 17 PM](https://github.com/user-attachments/assets/79d3fa6c-6353-4a0c-b48d-6daa94e04172)
+
+
+
+
 ## Estructura del proyecto
 * **bikerent/
 * ├── .gradle/
